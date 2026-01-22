@@ -1,0 +1,28 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DixKontrol"
+             x:Class="DixKontrol.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+
+                
+                    <ResourceDictionary>
+
+                        <!-- Fondo degradado global -->
+                    <!-- Fondo degradado global blanco a negro -->
+                    <LinearGradientBrush x:Key="AppBackgroundGradient"
+                             StartPoint="0,0"
+                             EndPoint="0,1">
+                        <GradientStop Color="#FFFFFF" Offset="0.0" />
+                        <GradientStop Color="#000000" Offset="1.0" />
+                    </LinearGradientBrush>
+                    </ResourceDictionary>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

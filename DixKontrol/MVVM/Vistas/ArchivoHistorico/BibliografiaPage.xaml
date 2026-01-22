@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.BibliografiaPage"
+             Title="Bibliografía histórica"
+             BackgroundColor="Transparent">
+
+    <!-- FONDO DEGRADADO -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="White" Offset="0.0" />
+            <GradientStop Color="Black" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- TÍTULO -->
+            <Label Text="Bibliografía histórica"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10" />
+
+            <!-- BLOQUE 1 -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="12"
+                   Padding="20">
+
+                <Label Text="
+Nando Dixkontrol (Fernando Gallego) fue una de las figuras más influyentes de la música electrónica en Barcelona y un referente absoluto de la escena mákina y rave de finales de los años 80 y principios de los 90. Su trayectoria está profundamente ligada al Psicódromo, la sala que se convirtió en el epicentro de una generación que buscaba nuevas formas de expresión musical y cultural.
+
+Su estilo como DJ se caracterizaba por una energía inconfundible, mezclas rápidas y una capacidad única para conectar con el público. Fue pionero en introducir sonidos electrónicos más duros y avanzados en un momento en el que la escena todavía estaba en construcción. Su presencia en cabina, su estética y su actitud marcaron un antes y un después en la cultura de club catalana.
+
+A lo largo de su carrera, Nando participó en sesiones históricas, colaboró con otros DJs y productores de la época y dejó una huella imborrable en quienes vivieron aquellos años. Su figura ha sido objeto de documentales, entrevistas y homenajes que destacan su impacto en la música electrónica española."
+                       FontSize="17"
+                       TextColor="White"
+                       LineHeight="1.35" />
+            </Frame>
+
+            <!-- BLOQUE 2 (NUEVO) -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="12"
+                   Padding="20">
+
+                <Label Text="
+Más allá de su faceta como DJ, Nando Dixkontrol representó una forma de entender la música como un acto de libertad y expresión personal. Su influencia trascendió las cabinas: inspiró a nuevos artistas, impulsó la evolución del sonido mákina y contribuyó a consolidar una identidad cultural propia dentro de la escena electrónica catalana.
+
+Su legado continúa vivo gracias a grabaciones, testimonios y recuerdos compartidos por quienes lo conocieron. Para muchos, Nando no solo fue un DJ, sino un símbolo de una época irrepetible en la que Barcelona vibraba al ritmo de una revolución musical que él ayudó a encender."
+                       FontSize="17"
+                       TextColor="White"
+                       LineHeight="1.35" />
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DixKontrol.MenuPage"
+             BackgroundColor="Transparent">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="White" Offset="0.0" />
+            <GradientStop Color="Black" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
+
+            <!-- BLOQUE 1 -->
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Archivo histórico"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="Black" />
+
+                <Frame BackgroundColor="#10FFFFFF"
+                       CornerRadius="12"
+                       Padding="15">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <!-- BOTÓN ESTILO ENLACE -->
+                        <Button Text="Biografía interactiva"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="Bio_Clicked"/>
+
+                        <Button Text="Línea temporal"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="Linea_Clicked"/>
+
+                        <Button Text="Clips y material histórico"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="Clips_Clicked"/>
+
+                        <Button Text="La escena mákina y la Barcelona preolímpica"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="Makina_Clicked"/>
+
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+
+
+            <!-- BLOQUE 2 -->
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Relato documental"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="Black" />
+
+                <Frame BackgroundColor="#10FFFFFF"
+                       CornerRadius="12"
+                       Padding="15">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Button Text="Ciudadano Fernando Gallego: Baila o muere"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="Docu_Clicked"/>
+
+                        <Button Text="Contenido transmedia"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="Transmedia_Clicked"/>
+
+                        <Button Text="Testimonios y anécdotas"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="Testimonios_Clicked"/>
+
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
