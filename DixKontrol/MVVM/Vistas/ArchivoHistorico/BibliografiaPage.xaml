@@ -17,15 +17,18 @@
         <VerticalStackLayout Padding="20" Spacing="20">
 
             <!-- TÍTULO -->
-            <Label Text="Bibliografía histórica"
+            <Label x:Name="Titulo"
+                   Text="Bibliografía histórica"
                    FontSize="28"
+                   FontFamily="Montserrat-Bold.ttf"
                    FontAttributes="Bold"
                    TextColor="Black"
                    HorizontalTextAlignment="Center"
                    Margin="0,10" />
 
             <!-- BLOQUE 1 -->
-            <Frame BackgroundColor="#10FFFFFF"
+            <Frame x:Name="Bloque1"
+                   BackgroundColor="#10FFFFFF"
                    CornerRadius="12"
                    Padding="20">
 
@@ -37,11 +40,13 @@ Su estilo como DJ se caracterizaba por una energía inconfundible, mezclas rápi
 A lo largo de su carrera, Nando participó en sesiones históricas, colaboró con otros DJs y productores de la época y dejó una huella imborrable en quienes vivieron aquellos años. Su figura ha sido objeto de documentales, entrevistas y homenajes que destacan su impacto en la música electrónica española."
                        FontSize="17"
                        TextColor="White"
+                       FontFamily="Montserrat-Regular.ttf"
                        LineHeight="1.35" />
             </Frame>
 
-            <!-- BLOQUE 2 (NUEVO) -->
-            <Frame BackgroundColor="#10FFFFFF"
+            <!-- BLOQUE 2 -->
+            <Frame x:Name="Bloque2"
+                   BackgroundColor="#10FFFFFF"
                    CornerRadius="12"
                    Padding="20">
 
@@ -51,6 +56,7 @@ Más allá de su faceta como DJ, Nando Dixkontrol representó una forma de enten
 Su legado continúa vivo gracias a grabaciones, testimonios y recuerdos compartidos por quienes lo conocieron. Para muchos, Nando no solo fue un DJ, sino un símbolo de una época irrepetible en la que Barcelona vibraba al ritmo de una revolución musical que él ayudó a encender."
                        FontSize="17"
                        TextColor="White"
+                       FontFamily="Montserrat-Regular.ttf"
                        LineHeight="1.35" />
             </Frame>
 

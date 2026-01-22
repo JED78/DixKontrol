@@ -21,7 +21,7 @@ public partial class MenuPage : ContentPage
 
     private void Clips_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new MenuPage());
+        Navigation.PushAsync(new MaterialHistoricoPage());
     }
 
     private void Makina_Clicked(object sender, EventArgs e)

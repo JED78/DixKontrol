@@ -65,7 +65,7 @@
                    Padding="15">
                 <VerticalStackLayout Spacing="8">
 
-                    <Label Text="🎥 Entrevista — Barcelona electrónica (1993)"
+                    <Label Text="🎥 Entrevista — Leyenda viva de la música electrónica (Vice)"
                            FontSize="18"
                            FontAttributes="Bold"
                            TextColor="White" />

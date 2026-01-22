@@ -29,12 +29,14 @@
                    Padding="15">
                 <VerticalStackLayout Spacing="6">
                     <Label Text="Finales de los 80"
+                           FontFamily="Montserrat-Bold.ttf"
                            FontSize="20"
                            FontAttributes="Bold"
                            TextColor="Black" />
 
                     <Label Text="Nando inicia su trayectoria como DJ en Barcelona, explorando nuevos sonidos electrónicos y desarrollando un estilo propio que pronto llamaría la atención en la escena underground."
                            FontSize="16"
+                           FontFamily="Montserrat-Regular.ttf"
                            TextColor="White"
                            LineHeight="1.35" />
                 </VerticalStackLayout>
@@ -48,11 +50,13 @@
                     <Label Text="1990"
                            FontSize="20"
                            FontAttributes="Bold"
+                           FontFamily="Montserrat-Bold.ttf"
                            TextColor="Black" />
 
                     <Label Text="Se convierte en una figura clave del Psicódromo, la sala que marcaría un antes y un después en la cultura electrónica catalana. Su estilo energético y su presencia en cabina lo consolidan como referente."
                            FontSize="16"
                            TextColor="White"
+                           FontFamily="Montserrat-Regular.ttf"
                            LineHeight="1.35" />
                 </VerticalStackLayout>
             </Frame>
@@ -63,12 +67,14 @@
                    Padding="15">
                 <VerticalStackLayout Spacing="6">
                     <Label Text="1991–1993"
+                           FontFamily="Montserrat-Bold.ttf"
                            FontSize="20"
                            FontAttributes="Bold"
                            TextColor="Black" />
 
                     <Label Text="Participa en sesiones históricas que definen el sonido mákina. Su influencia se extiende más allá de Barcelona, llegando a consolidarse como uno de los DJs más reconocidos del país."
                            FontSize="16"
+                           FontFamily="Montserrat-Regular.ttf"
                            TextColor="White"
                            LineHeight="1.35" />
                 </VerticalStackLayout>
@@ -80,6 +86,7 @@
                    Padding="15">
                 <VerticalStackLayout Spacing="6">
                     <Label Text="Mediados de los 90"
+                           FontFamily="Montserrat-Bold.ttf"
                            FontSize="20"
                            FontAttributes="Bold"
                            TextColor="Black" />
@@ -87,6 +94,7 @@
                     <Label Text="Su figura se convierte en símbolo de una generación. Continúa actuando, colaborando y dejando huella en la evolución del sonido electrónico en Cataluña."
                            FontSize="16"
                            TextColor="White"
+                           FontFamily="Montserrat-Regular.ttf"
                            LineHeight="1.35" />
                 </VerticalStackLayout>
             </Frame>
@@ -97,6 +105,7 @@
                    Padding="15">
                 <VerticalStackLayout Spacing="6">
                     <Label Text="2000 en adelante"
+                           FontFamily="Montserrat-Bold.ttf"
                            FontSize="20"
                            FontAttributes="Bold"
                            TextColor="Black" />

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.VideoPage"
+             BackgroundColor="Transparent">
+
+    <!-- FONDO DEGRADADO -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="White" Offset="0.0" />
+            <GradientStop Color="Black" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- TÍTULO -->
+            <Label Text="Clip histórico"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10" />
+
+            <!-- DESCRIPCIÓN -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="12"
+                   Padding="15">
+                <Label Text="Fragmento audiovisual recuperado del archivo histórico de Nando Dixkontrol. Este clip forma parte de la memoria colectiva de la escena electrónica barcelonesa."
+                       FontSize="16"
+                       TextColor="White"
+                       LineHeight="1.35" />
+            </Frame>
+
+            <!-- VIDEO -->
+            <Frame BackgroundColor="#20FFFFFF"
+                   CornerRadius="12"
+                   Padding="10">
+
+                <toolkit:MediaElement
+                    x:Name="VideoPlayer"
+                    Source="psicodromo.mp4"
+                    AutoPlay="False"
+                    ShowsPlaybackControls="True"
+                    Aspect="AspectFit"
+                    HeightRequest="250" />
+
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
