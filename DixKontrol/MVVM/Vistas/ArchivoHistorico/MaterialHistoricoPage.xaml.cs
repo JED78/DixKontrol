@@ -24,12 +24,22 @@ public partial class MaterialHistoricoPage : ContentPage
 
     private void VerClip2_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new BibliografiaPage());
+        Navigation.PushAsync(new VideoPage());
     }
 
-    private void VerFlyer3_Clicked(object sender, EventArgs e)
+    private async void VerFlyer3_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new BibliografiaPage());
+        var popup = new Popup
+        {
+            Content = new Image
+            {
+                Source = "flyer.jpg"
+                Aspect = Aspect.AspectFit
+            }
+        };
+
+        await this.ShowPopupAsync(popup);
+
     }
 
 }

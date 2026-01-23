@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.MaterialHistoricoPage"
-             Title="MaterialHistoricoPage">
-    BackgroundColor="Transparent">
+             Title="Material Historico "
+             BackgroundColor="Transparent">
 
     <!-- FONDO DEGRADADO -->
     <ContentPage.Background>
@@ -90,12 +90,12 @@
                    Padding="15">
                 <VerticalStackLayout Spacing="8">
 
-                    <Label Text="📄 Flyer original — Psicódromo (1990)"
+                    <Label Text="📄 Flyer original — Psicódromo (1899 - 2019)"
                            FontSize="18"
                            FontAttributes="Bold"
                            TextColor="White" />
 
-                    <Label Text="Uno de los flyers más icónicos de la época, distribuido en tiendas de discos y puntos de encuentro de la escena underground."
+                    <Label Text="Uno de los flyers de la celebración del 30 aniversario del Psicodromo de Barcelona"
                            FontSize="15"
                            TextColor="White"
                            LineHeight="1.35" />

@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.VideoPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              BackgroundColor="Transparent">
 
     <!-- FONDO DEGRADADO -->
@@ -16,7 +17,7 @@
         <VerticalStackLayout Padding="20" Spacing="25">
 
             <!-- TÍTULO -->
-            <Label Text="Clip histórico"
+            <Label Text="Nando Dixkontrol: Leyenda viva de la música electrónica (Vice en español)"
                    FontSize="28"
                    FontAttributes="Bold"
                    TextColor="Black"
@@ -27,7 +28,7 @@
             <Frame BackgroundColor="#10FFFFFF"
                    CornerRadius="12"
                    Padding="15">
-                <Label Text="Fragmento audiovisual recuperado del archivo histórico de Nando Dixkontrol. Este clip forma parte de la memoria colectiva de la escena electrónica barcelonesa."
+                <Label Text="En pleno furor preolímpico, la noche barcelonesa vivió una edad dorada que muchos no olvidarán jamás. Su punto álgido fue a finales de los ochenta, cuando nació Psicódromo, una mítica sala que se convirtió en el templo de una generación donde la música mákina era el credo. Allí se fraguó la leyenda del genial Nando Dixkontrol, el enfant terrible de la electrónica española que puso a sus pies a toda esa escena a base de mezclas imposibles, discos en llamas y discursos irrepetibles."
                        FontSize="16"
                        TextColor="White"
                        LineHeight="1.35" />
@@ -40,8 +41,8 @@
 
                 <toolkit:MediaElement
                     x:Name="VideoPlayer"
-                    Source="psicodromo.mp4"
-                    AutoPlay="False"
+                    Source="Vice.mp4"
+                    AutoPlay="True"
                     ShowsPlaybackControls="True"
                     Aspect="AspectFit"
                     HeightRequest="250" />
