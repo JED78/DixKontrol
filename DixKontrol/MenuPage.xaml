@@ -76,13 +76,24 @@
                                 HeightRequest="36"
                                 Clicked="Makina_Clicked"/>
 
+                        <Button Text="Bibliografía"
+                                 FontSize="16"
+                                 FontAttributes="Bold"
+                                 TextColor="White"
+                                 BackgroundColor="Transparent"
+                                 BorderColor="#60FFFFFF"
+                                 BorderWidth="1"
+                                 CornerRadius="12"
+                                 Padding="10,6"
+                                 HeightRequest="36"
+                                 Clicked="Bibliografialaboral_Clicked"/>
                     </VerticalStackLayout>
                 </Frame>
             </VerticalStackLayout>
 
             <!-- BLOQUE 2 -->
             <VerticalStackLayout x:Name="Bloque2" Spacing="10" Opacity="0">
-                <Label Text="Relato documental"
+                <Label Text="Presencia Digital y Sesiones"
                        FontSize="24"
                        FontAttributes="Bold"
                        TextColor="#FFD966" />
@@ -93,19 +104,9 @@
 
                     <VerticalStackLayout Spacing="8">
 
-                        <Button Text="Ciudadano Fernando Gallego: Baila o muere"
-                                FontSize="16"
-                                FontAttributes="Bold"
-                                TextColor="White"
-                                BackgroundColor="Transparent"
-                                BorderColor="#60FFFFFF"
-                                BorderWidth="1"
-                                CornerRadius="12"
-                                Padding="10,6"
-                                HeightRequest="36"
-                                Clicked="Docu_Clicked"/>
+                       
 
-                        <Button Text="Contenido transmedia"
+                        <Button Text="Sesiones Psicodromo"
                                 FontSize="16"
                                 FontAttributes="Bold"
                                 TextColor="White"
@@ -117,7 +118,7 @@
                                 HeightRequest="36"
                                 Clicked="Transmedia_Clicked"/>
 
-                        <Button Text="Testimonios y anécdotas"
+                        <Button Text="Redes Sociales"
                                 FontSize="16"
                                 FontAttributes="Bold"
                                 TextColor="White"
@@ -127,7 +128,7 @@
                                 CornerRadius="12"
                                 Padding="10,6"
                                 HeightRequest="36"
-                                Clicked="Testimonios_Clicked"/>
+                                Clicked="RedesSociales_Clicked"/>
 
                     </VerticalStackLayout>
                 </Frame>

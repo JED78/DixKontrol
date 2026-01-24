@@ -1,4 +1,5 @@
 using DixKontrol.MVVM.Vistas.ArchivoHistorico;
+using DixKontrol.MVVM.Vistas.RelatoDocumental;
 
 namespace DixKontrol;
 
@@ -29,17 +30,17 @@ public partial class MenuPage : ContentPage
         Navigation.PushAsync(new EscenaMaquinaPage());
     }
 
-    private void Docu_Clicked(object sender, EventArgs e)
+    private void Bibliografialaboral_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new MenuPage());
+        Navigation.PushAsync(new BibliografiaPage());
     }
     private void Transmedia_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new MenuPage());
+        Navigation.PushAsync(new SesionesPage());
     }
-    private void Testimonios_Clicked(object sender, EventArgs e)
+    private void RedesSociales_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new MenuPage());
+        Navigation.PushAsync(new EnlacesPage());
     }
 
     // Animación. 
