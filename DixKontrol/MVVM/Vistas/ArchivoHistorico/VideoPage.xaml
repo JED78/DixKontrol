@@ -8,8 +8,9 @@
     <!-- FONDO DEGRADADO -->
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="White" Offset="0.0" />
-            <GradientStop Color="Black" Offset="1.0" />
+            <GradientStop Color="#050509" Offset="0.0" />
+            <GradientStop Color="#151525" Offset="0.4" />
+            <GradientStop Color="#000000" Offset="1.0" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
@@ -20,7 +21,7 @@
             <Label Text="Nando Dixkontrol: Leyenda viva de la música electrónica (Vice en español)"
                    FontSize="28"
                    FontAttributes="Bold"
-                   TextColor="Black"
+                   TextColor="#FFD966"
                    HorizontalTextAlignment="Center"
                    Margin="0,10" />
 

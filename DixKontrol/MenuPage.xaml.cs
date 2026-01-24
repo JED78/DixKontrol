@@ -26,7 +26,7 @@ public partial class MenuPage : ContentPage
 
     private void Makina_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new MenuPage());
+        Navigation.PushAsync(new EscenaMaquinaPage());
     }
 
     private void Docu_Clicked(object sender, EventArgs e)
@@ -41,5 +41,20 @@ public partial class MenuPage : ContentPage
     {
         Navigation.PushAsync(new MenuPage());
     }
-  
+
+    // Animación. 
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+
+        // Animación secuencial
+        await FadeIn(Bloque1);
+        await FadeIn(Bloque2);
+    }
+
+    private async Task FadeIn(View view)
+    {
+        view.Opacity = 0;
+        await view.FadeTo(1, 800, Easing.CubicInOut);
+    }
 }

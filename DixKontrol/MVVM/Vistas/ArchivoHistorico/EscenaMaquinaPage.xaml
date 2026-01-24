@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.EscenaMaquinaPage"
+             BackgroundColor="Transparent">
+
+    <!-- FONDO DEGRADADO -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#050509" Offset="0.0" />
+            <GradientStop Color="#151525" Offset="0.4" />
+            <GradientStop Color="#000000" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- TÍTULO -->
+            <Label Text="Escena mákina y Barcelona pre‑olímpica"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#FFD966"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10" />
+
+            <!-- BLOQUE 1 -->
+            <Frame x:Name="Bloque1"
+                   BackgroundColor="#10FFFFFF"
+                   CornerRadius="12"
+                   Padding="15"
+                   Opacity="0">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="Barcelona antes del 92"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Label Text="Antes de los Juegos Olímpicos, Barcelona era una ciudad en transformación: naves industriales, barrios obreros y espacios urbanos que se convertían en el escenario perfecto para el nacimiento de nuevas culturas juveniles."
+                           FontSize="16"
+                           TextColor="White"
+                           LineHeight="1.35" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- BLOQUE 2 -->
+            <Frame x:Name="Bloque2"
+                   BackgroundColor="#10FFFFFF"
+                   CornerRadius="12"
+                   Padding="15"
+                   Opacity="0">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="Nacimiento del sonido mákina"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Label Text="La mákina surgió como un sonido propio de Cataluña: rápido, contundente y emocional. Una mezcla de techno europeo, EBM y acid que DJs como Nando Dixkontrol transformaron en un estilo único."
+                           FontSize="16"
+                           TextColor="White"
+                           LineHeight="1.35" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- BLOQUE 3 -->
+            <Frame x:Name="Bloque3"
+                   BackgroundColor="#10FFFFFF"
+                   CornerRadius="12"
+                   Padding="15"
+                   Opacity="0">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="El Psicódromo: epicentro cultural"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Label Text="El Psicódromo se convirtió en un laboratorio sonoro donde se definió el ADN de la mákina. Allí se reunían DJs, ravers y creativos que impulsaron una escena irrepetible."
+                           FontSize="16"
+                           TextColor="White"
+                           LineHeight="1.35" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- BLOQUE 4 -->
+            <Frame x:Name="Bloque4"
+                   BackgroundColor="#10FFFFFF"
+                   CornerRadius="12"
+                   Padding="15"
+                   Opacity="0">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="Estética pre‑olímpica"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Label Text="Flyers fotocopiados, tipografías industriales, colores fluorescentes y una estética urbana que mezclaba futurismo y crudeza. La imagen de una Barcelona aún sin pulir."
+                           FontSize="16"
+                           TextColor="White"
+                           LineHeight="1.35" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- BLOQUE 5 -->
+            <Frame x:Name="Bloque5"
+                   BackgroundColor="#10FFFFFF"
+                   CornerRadius="12"
+                   Padding="15"
+                   Opacity="0">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="Impacto cultural"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Label Text="La mákina definió una identidad musical catalana. Su influencia se extendió a radios, tiendas de discos y colectivos de DJs, dejando un legado que aún perdura."
+                           FontSize="16"
+                           TextColor="White"
+                           LineHeight="1.35" />
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

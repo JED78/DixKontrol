@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.MaterialHistoricoPage"
-             Title="Material Historico "
              BackgroundColor="Transparent">
 
     <!-- FONDO DEGRADADO -->
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="White" Offset="0.0" />
-            <GradientStop Color="Black" Offset="1.0" />
+            <GradientStop Color="#050509" Offset="0.0" />
+            <GradientStop Color="#151525" Offset="0.4" />
+            <GradientStop Color="#000000" Offset="1.0" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
@@ -115,22 +115,22 @@
                    Padding="15">
                 <VerticalStackLayout Spacing="8">
 
-                    <Label Text="🎙️ Testimonio — DJ invitado (1992)"
+                    <Label Text="🎙️ Imagenes del Psicodromo"
                            FontSize="18"
                            FontAttributes="Bold"
                            TextColor="White" />
 
-                    <Label Text="Declaraciones de un DJ que compartió cabina con Nando, recordando su técnica, su carisma y su influencia en la escena."
+                    <Label Text="Imagenes del recuerdo del Psicodromo y de Nando Dixkontrol"
                            FontSize="15"
                            TextColor="White"
                            LineHeight="1.35" />
 
-                    <Button Text="Escuchar testimonio"
+                    <Button Text="Visualizar imagenes"
                             FontSize="14"
                             TextColor="White"
                             BackgroundColor="#40FFFFFF"
                             CornerRadius="10"
-                            Clicked="Testimonio4_Clicked"/>
+                            Clicked="Imagenes_Clicked"/>
                 </VerticalStackLayout>
             </Frame>
 

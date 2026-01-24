@@ -2,122 +2,153 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.LineaTemporal"
-            BackgroundColor="Transparent">
-
-    <!-- FONDO DEGRADADO -->
+             BackgroundColor="Transparent">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="White" Offset="0.0" />
-            <GradientStop Color="Black" Offset="1.0" />
+            <GradientStop Color="#050509" Offset="0.0" />
+            <GradientStop Color="#151525" Offset="0.4" />
+            <GradientStop Color="#000000" Offset="1.0" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="25">
+        <VerticalStackLayout
+            Padding="20,40,20,40"
+            Spacing="18">
 
-            <!-- TÍTULO -->
-            <Label Text="Línea temporal"
-                   FontSize="28"
+            <!-- Título principal -->
+            <Label Text="Línea temporal de Nando Dixkontrol"
+                   FontSize="26"
                    FontAttributes="Bold"
-                   TextColor="Black"
+                   TextColor="White"
                    HorizontalTextAlignment="Center"
-                   Margin="0,10" />
+                   FontFamily="Montserrat-Bold.ttf" />
 
-            <!-- ITEM 1 -->
-            <Frame BackgroundColor="#10FFFFFF"
-                   CornerRadius="12"
-                   Padding="15">
-                <VerticalStackLayout Spacing="6">
-                    <Label Text="Finales de los 80"
-                           FontFamily="Montserrat-Bold.ttf"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="Black" />
+            <Label Text="Trayectoria por décadas, con contexto y descripciones."
+                   FontSize="14"
+                   TextColor="#CCCCCC"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="Montserrat-Regular.ttf"
+                   Margin="10,0,10,20" />
 
-                    <Label Text="Nando inicia su trayectoria como DJ en Barcelona, explorando nuevos sonidos electrónicos y desarrollando un estilo propio que pronto llamaría la atención en la escena underground."
-                           FontSize="16"
-                           FontFamily="Montserrat-Regular.ttf"
-                           TextColor="White"
-                           LineHeight="1.35" />
-                </VerticalStackLayout>
-            </Frame>
+            <!-- Años 80 -->
+            <Label Text="Años 80 — Los inicios y la chispa electrónica (1985–1989)"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#FFD966"
+                   FontFamily="Montserrat-Bold.ttf" />
 
-            <!-- ITEM 2 -->
-            <Frame BackgroundColor="#10FFFFFF"
-                   CornerRadius="12"
-                   Padding="15">
-                <VerticalStackLayout Spacing="6">
-                    <Label Text="1990"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           FontFamily="Montserrat-Bold.ttf"
-                           TextColor="Black" />
+            <Label Text="España vive la explosión post‑Movida, los primeros clubs electrónicos empiezan a aparecer, y el sonido europeo (EBM, synthpop, industrial) empieza a filtrarse."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
 
-                    <Label Text="Se convierte en una figura clave del Psicódromo, la sala que marcaría un antes y un después en la cultura electrónica catalana. Su estilo energético y su presencia en cabina lo consolidan como referente."
-                           FontSize="16"
-                           TextColor="White"
-                           FontFamily="Montserrat-Regular.ttf"
-                           LineHeight="1.35" />
-                </VerticalStackLayout>
-            </Frame>
+            <Label Text="Nando Dixkontrol comienza a pinchar en pequeños clubs de Barcelona. Se forma musicalmente con influencias de Front 242, Nitzer Ebb, Depeche Mode y Kraftwerk. Empieza a desarrollar su estilo: mezcla agresiva, energía oscura y actitud de directo, convirtiéndose en uno de los primeros DJs en España en apostar por sonidos más duros y electrónicos."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
 
-            <!-- ITEM 3 -->
-            <Frame BackgroundColor="#10FFFFFF"
-                   CornerRadius="12"
-                   Padding="15">
-                <VerticalStackLayout Spacing="6">
-                    <Label Text="1991–1993"
-                           FontFamily="Montserrat-Bold.ttf"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="Black" />
+            <!-- Años 90 -->
+            <Label Text="Años 90 — La explosión: Máquina, Ruta y leyenda (1990–1999)"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#FFD966"
+                   Margin="0,16,0,0"
+                   FontFamily="Montserrat-Bold.ttf" />
 
-                    <Label Text="Participa en sesiones históricas que definen el sonido mákina. Su influencia se extiende más allá de Barcelona, llegando a consolidarse como uno de los DJs más reconocidos del país."
-                           FontSize="16"
-                           FontFamily="Montserrat-Regular.ttf"
-                           TextColor="White"
-                           LineHeight="1.35" />
-                </VerticalStackLayout>
-            </Frame>
+            <Label Text="La escena máquina catalana y la Ruta del Bakalao valenciana están en su máximo esplendor. Es la década dorada de las megadiscotecas."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
 
-            <!-- ITEM 4 -->
-            <Frame BackgroundColor="#10FFFFFF"
-                   CornerRadius="12"
-                   Padding="15">
-                <VerticalStackLayout Spacing="6">
-                    <Label Text="Mediados de los 90"
-                           FontFamily="Montserrat-Bold.ttf"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="Black" />
+            <Label Text="Nando Dixkontrol se convierte en uno de los DJs más influyentes de la escena máquina. Su estilo se vuelve más duro, más rápido y más teatral. Es reconocido por su presencia escénica, su estética y su forma de conectar con el público, convirtiéndose en un icono de la cultura rave española."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
 
-                    <Label Text="Su figura se convierte en símbolo de una generación. Continúa actuando, colaborando y dejando huella en la evolución del sonido electrónico en Cataluña."
-                           FontSize="16"
-                           TextColor="White"
-                           FontFamily="Montserrat-Regular.ttf"
-                           LineHeight="1.35" />
-                </VerticalStackLayout>
-            </Frame>
+            <Label Text="Actúa en salas míticas como Scorpia, Pont Aeri, Chasis, Xque?, Area, La Cova, Barraca, Spook Factory, ACTV o Chocolate."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
 
-            <!-- ITEM 5 -->
-            <Frame BackgroundColor="#10FFFFFF"
-                   CornerRadius="12"
-                   Padding="15">
-                <VerticalStackLayout Spacing="6">
-                    <Label Text="2000 en adelante"
-                           FontFamily="Montserrat-Bold.ttf"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="Black" />
+            <!-- Años 2000 -->
+            <Label Text="Años 2000 — Consolidación, techno y festivales (2000–2009)"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#FFD966"
+                   Margin="0,16,0,0"
+                   FontFamily="Montserrat-Bold.ttf" />
 
-                    <Label Text="Su legado permanece vivo en grabaciones, testimonios y en la memoria colectiva de la escena electrónica. Su nombre sigue siendo sinónimo de autenticidad y revolución musical."
-                           FontSize="16"
-                           TextColor="White"
-                           LineHeight="1.35" />
-                </VerticalStackLayout>
-            </Frame>
+            <Label Text="La escena evoluciona hacia el techno, el hard techno y los festivales masivos."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
+
+            <Label Text="Nando Dixkontrol se reinventa sin perder su esencia. Actúa en eventos más grandes y festivales, introduce sonidos más techno e industriales y se consolida como un artista respetado por varias generaciones."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
+
+            <Label Text="Pasa por Monegros Desert Festival, Florida 135, Industrial Copera, Family Club, Sala Groove, La Riviera, Moog, Razzmatazz y muchos otros templos electrónicos."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
+
+            <!-- Años 2010 -->
+            <Label Text="Años 2010 — El renacer remember y la figura mítica (2010–2019)"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#FFD966"
+                   Margin="0,16,0,0"
+                   FontFamily="Montserrat-Bold.ttf" />
+
+            <Label Text="La nostalgia por la máquina y la Ruta del Bakalao revive con fuerza. Los eventos remember llenan salas por toda España."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
+
+            <Label Text="Nando Dixkontrol se convierte en figura legendaria de los eventos remember. Su nombre aparece en carteles de toda España, su estética y energía siguen intactas y nuevas generaciones lo descubren y lo veneran."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
+
+            <Label Text="Participa en Scorpia Revival, Pont Aeri Remember, Xque? Classics, Chasis Remember y multitud de festivales y eventos remember."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
+
+            <!-- Años 2020 -->
+            <Label Text="Años 2020 — Últimos años activos y legado (2020–2023)"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#FFD966"
+                   Margin="0,16,0,0"
+                   FontFamily="Montserrat-Bold.ttf" />
+
+            <Label Text="La escena electrónica vive una mezcla de nostalgia y modernidad."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
+
+            <Label Text="Nando Dixkontrol sigue actuando en eventos remember y sesiones especiales. Mantiene su estética característica y su figura se consolida como una de las más icónicas de la historia electrónica española."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf" />
+
+            <!-- Legado -->
+            <Label Text="Legado"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="#FFFFFF"
+                   Margin="0,20,0,0"
+                   FontFamily="Montserrat-Bold.ttf" />
+
+            <Label Text="Nando Dixkontrol no es solo un DJ: es un símbolo cultural, un puente entre generaciones y un artista que convirtió la cabina en un escenario y la música en un ritual. Su influencia sigue viva en DJs actuales, eventos remember, la cultura rave y la estética electrónica española."
+                   FontSize="14"
+                   TextColor="#E0E0E0"
+                   FontFamily="Montserrat-Regular.ttf"
+                   Margin="0,0,0,20" />
 
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

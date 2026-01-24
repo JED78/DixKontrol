@@ -3,7 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DixKontrol.PresentacionForm"
              Background="{StaticResource AppBackgroundGradient}">
-
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#050509" Offset="0.0" />
+            <GradientStop Color="#151525" Offset="0.4" />
+            <GradientStop Color="#000000" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
     <Grid RowDefinitions="Auto, Auto, *" Padding="30">
 
         <!-- Imagen circular -->
@@ -51,7 +57,7 @@
                 Text="Nando Dixkontrol"
                 FontSize="28"
                 FontAttributes="Bold"
-                TextColor="Black"
+                TextColor="White"
                 HorizontalTextAlignment="Center" FontFamily="Montserrat-Bold.ttf"/>
 
             <Label
@@ -59,7 +65,7 @@
                 Text="Figura esencial de la electrónica barcelonesa, pionero del Psicódromo y símbolo de una generación."
                 FontFamily="Montserrat-Regular.ttf"
                 FontSize="16"
-                TextColor="Black"
+                TextColor="White"
                 HorizontalTextAlignment="Center"
                 Margin="20,0" Opacity="0"/>
         </StackLayout>

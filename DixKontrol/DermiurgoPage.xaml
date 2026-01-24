@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DixKontrol.DermiurgoPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#050509" Offset="0.0" />
+            <GradientStop Color="#151525" Offset="0.4" />
+            <GradientStop Color="#000000" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <Grid RowDefinitions="Auto,Auto,Auto,*"
+          Padding="20"
+          VerticalOptions="Center">
+
+        <!-- Imagen redonda centrada -->
+        <Frame
+            Grid.Row="0"
+            WidthRequest="160"
+            HeightRequest="160"
+            CornerRadius="80"
+            Padding="0"
+            HasShadow="False"
+            BorderColor="White"
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="0,20,0,0">
+
+            <Image
+                x:Name="OjoImage"
+                Source="ojo.png"
+                Aspect="AspectFill"
+                BackgroundColor="Transparent" />
+        </Frame>
+
+        <!-- Título -->
+        <Label
+            x:Name="TituloLabel"
+            Grid.Row="1"
+            Text="Demiurgo Connect"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            FontSize="28"
+            FontAttributes="Bold"
+            TextColor="White"
+            Margin="0,12,0,0"
+            FontFamily="Montserrat-Bold.ttf"/>
+
+        <!-- Frase descriptiva -->
+        <Label
+            x:Name="FraseLabel"
+            Grid.Row="2"
+            Text="Diseñamos el orden detrás del caos digital."
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            FontSize="14"
+            TextColor="#CCCCCC"
+            HorizontalTextAlignment="Center"
+            Margin="20,4,20,0"
+            FontFamily="Montserrat-Regular.ttf"/>
+
+    </Grid>
+</ContentPage>

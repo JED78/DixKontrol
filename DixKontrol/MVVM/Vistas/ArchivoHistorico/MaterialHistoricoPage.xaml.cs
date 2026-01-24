@@ -1,3 +1,5 @@
+using CommunityToolkit.Maui.Extensions;
+using CommunityToolkit.Maui.Views;
 using Plugin.Maui.Audio;
 
 namespace DixKontrol.MVVM.Vistas.ArchivoHistorico;
@@ -33,7 +35,7 @@ public partial class MaterialHistoricoPage : ContentPage
         {
             Content = new Image
             {
-                Source = "flyer.jpg"
+                Source = "flyer.jpg",
                 Aspect = Aspect.AspectFit
             }
         };
@@ -42,4 +44,39 @@ public partial class MaterialHistoricoPage : ContentPage
 
     }
 
+    private async void Imagenes_Clicked(object sender, EventArgs e)
+    {
+        var images = new List<string>
+    {
+        "Foto_001.jpg",
+        "Foto_002.jpg",
+        "Foto_003.jpg",
+        "Foto_004.jpg",
+        "Foto_005.jpg",
+        "Foto_006.jpg",
+        "Foto_007.jpg",
+        "Foto_008.jpg",
+        "Foto_009.jpg",
+        "Foto_010.jpg",
+        "Foto_011.jpg",
+        "Foto_012.jpg",
+        "Foto_013.jpg",
+        "Foto_014.jpg",
+        "Foto_015.jpg",
+        "Foto_016.jpg",
+        "Foto_017.jpg",
+        "Foto_018.jpg",
+        "Foto_019.jpg",
+        "Foto_020.jpg",
+        "Foto_021.jpg",
+        "Foto_022.jpg",
+        "Foto_023.jpg",
+        "Foto_024.jpg"
+    };
+
+        var popup = new FlyerGalleryPopup(images, startIndex: 2); // empieza en flyer3
+        await this.ShowPopupAsync(popup);
+
+
+    }
 }

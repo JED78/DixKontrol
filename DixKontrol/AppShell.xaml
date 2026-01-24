@@ -7,7 +7,7 @@
     Title="DixKontrol">
 
     <ShellContent
-        ContentTemplate="{DataTemplate local:PresentacionForm}"
+        ContentTemplate="{DataTemplate local:DermiurgoPage}"
         Route="MainPage" />
 
 </Shell>

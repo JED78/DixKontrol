@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.FlyerGalleryPopup"
+               >
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#050509" Offset="0.0" />
+            <GradientStop Color="#151525" Offset="0.4" />
+            <GradientStop Color="#000000" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <Grid Padding="20">
+
+        <CarouselView x:Name="FlyerCarousel"
+                      Loop="True"
+                      IndicatorView="Indicadores"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center">
+
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}"
+                           Aspect="AspectFit"/>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+        </CarouselView>
+
+        <IndicatorView x:Name="Indicadores"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       IndicatorColor="Gray"
+                       SelectedIndicatorColor="White"
+                       Margin="0,20"/>
+
+    </Grid>
+
+    </toolkit:Popup>
