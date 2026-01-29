@@ -14,7 +14,6 @@
        Padding="0"
        BackgroundColor="#00FFFFFF"
        BorderColor="White"
-       BorderWidth="6"
        HasShadow="False"
        HorizontalOptions="Center"
        Margin="0,20,0,20">

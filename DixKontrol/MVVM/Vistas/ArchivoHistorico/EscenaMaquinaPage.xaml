@@ -5,14 +5,7 @@
              BackgroundColor="Transparent"
              xmlns:local="clr-namespace:DixKontrol">
 
-    <!-- FONDO DEGRADADO -->
-    <local:BasePage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="#050509" Offset="0.0" />
-            <GradientStop Color="#151525" Offset="0.4" />
-            <GradientStop Color="#000000" Offset="1.0" />
-        </LinearGradientBrush>
-    </local:BasePage.Background>
+   
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25">

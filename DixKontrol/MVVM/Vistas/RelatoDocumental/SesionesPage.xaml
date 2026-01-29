@@ -69,8 +69,6 @@
 
             <!-- REPRODUCTOR -->
             <toolkit:MediaElement x:Name="Player"
-                                  AutoPlay="True"
-                                  ShowsPlaybackControls="True"
                                   HeightRequest="70"
                                   BackgroundColor="#000000"
                                   IsVisible="False"/>
