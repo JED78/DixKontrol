@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<local:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.LineaTemporal"
-             BackgroundColor="Transparent">
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="#050509" Offset="0.0" />
-            <GradientStop Color="#151525" Offset="0.4" />
-            <GradientStop Color="#000000" Offset="1.0" />
-        </LinearGradientBrush>
-    </ContentPage.Background>
+             BackgroundColor="Transparent"
+             xmlns:local="clr-namespace:DixKontrol">
+    
 
     <ScrollView>
         <VerticalStackLayout
@@ -20,7 +15,7 @@
             <Label Text="Línea temporal de Nando Dixkontrol"
                    FontSize="26"
                    FontAttributes="Bold"
-                   TextColor="White"
+                   TextColor="#FFD966"
                    HorizontalTextAlignment="Center"
                    FontFamily="Montserrat-Bold.ttf" />
 
@@ -151,4 +146,4 @@
 
         </VerticalStackLayout>
     </ScrollView>
-</ContentPage>
+</local:BasePage>

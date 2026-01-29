@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DixKontrol.DermiurgoPage">
+<local:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:local="clr-namespace:DixKontrol"
+                x:Class="DixKontrol.DermiurgoPage">
 
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="#050509" Offset="0.0" />
-            <GradientStop Color="#151525" Offset="0.4" />
-            <GradientStop Color="#000000" Offset="1.0" />
-        </LinearGradientBrush>
-    </ContentPage.Background>
+  
     <Grid RowDefinitions="Auto,Auto,Auto,*"
           Padding="20"
           VerticalOptions="Center">
@@ -28,11 +23,17 @@
             VerticalOptions="Center"
             Margin="0,20,0,0">
 
-            <Image
-                x:Name="OjoImage"
-                Source="ojo.png"
-                Aspect="AspectFill"
-                BackgroundColor="Transparent" />
+            <Border
+    WidthRequest="160"
+    HeightRequest="160"
+    StrokeThickness="0"
+    BackgroundColor="Transparent"
+    StrokeShape="Ellipse">
+
+                <Image x:Name="OjoImage"
+        Source="demiurgoportada.png"
+        Aspect="AspectFill" />
+            </Border>
         </Frame>
 
         <!-- Título -->
@@ -62,4 +63,4 @@
             FontFamily="Montserrat-Regular.ttf"/>
 
     </Grid>
-</ContentPage>
+</local:BasePage>

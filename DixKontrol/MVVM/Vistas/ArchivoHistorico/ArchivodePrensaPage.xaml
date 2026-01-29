@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<local:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                x:Class="DixKontrol.MVVM.Vistas.ArchivoHistorico.ArchivodePrensaPage"
+                xmlns:local="clr-namespace:DixKontrol"
+                BackgroundColor="Transparent">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- TÍTULO -->
+            <Label Text="Archivo de Prensa"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   FontFamily="Montserrat-Bold.ttf"
+                   TextColor="#FFD966"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10" />
+
+            <!-- EL PERIÓDICO -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="14"
+                   Padding="18"
+                   HasShadow="False">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="El Periódico – Entrevista: 30 años de Psicódromo"
+                           FontSize="18"
+                           TextColor="White"
+                           FontFamily="Montserrat-Bold.ttf" />
+                    <Label Text="https://www.elperiodico.com/es/ocio-y-cultura/20190922/entrevista-dj-nando-dixkontrol-fiesta-celebracion-30-anos-discoteca-psicodromo-poblenou-barcelona-7645963"
+                           FontSize="13"
+                           TextColor="#BBBBBB"
+                           LineBreakMode="CharacterWrap" />
+                    <Button Text="Ver noticia"
+                            HeightRequest="45"
+                            CornerRadius="10"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            FontFamily="Montserrat-Bold.ttf"
+                            Clicked="OnNoticiaElPeriodicoClicked" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- RTVE – Ponte las pilas -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="14"
+                   Padding="18"
+                   HasShadow="False">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="RTVE – Ponte las pilas"
+                           FontSize="18"
+                           TextColor="White"
+                           FontFamily="Montserrat-Bold.ttf" />
+                    <Label Text="https://www.rtve.es/play/videos/ponte-las-pilas/"
+                           FontSize="13"
+                           TextColor="#BBBBBB"
+                           LineBreakMode="CharacterWrap" />
+                    <Button Text="Ver contenido"
+                            HeightRequest="45"
+                            CornerRadius="10"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            FontFamily="Montserrat-Bold.ttf"
+                            Clicked="OnNoticiaPonteLasPilasClicked" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- CCCB -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="14"
+                   Padding="18"
+                   HasShadow="False">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="CCCB – Ficha de Nando Dixkontrol"
+                           FontSize="18"
+                           TextColor="White"
+                           FontFamily="Montserrat-Bold.ttf" />
+                    <Label Text="https://www.cccb.org/es/participantes/ficha/nando-dixkontrol/226458"
+                           FontSize="13"
+                           TextColor="#BBBBBB"
+                           LineBreakMode="CharacterWrap" />
+                    <Button Text="Ver ficha"
+                            HeightRequest="45"
+                            CornerRadius="10"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            FontFamily="Montserrat-Bold.ttf"
+                            Clicked="OnNoticiaCCCBClicked" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- LA VANGUARDIA -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="14"
+                   Padding="18"
+                   HasShadow="False">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="La Vanguardia – Entrevista: Ciudadano Fernando Gallego"
+                           FontSize="18"
+                           TextColor="White"
+                           FontFamily="Montserrat-Bold.ttf" />
+                    <Label Text="https://www.lavanguardia.com/musica/20160906/41120299210/nando-dixkontrol-entrevista-documental-ciudadano-fernando-gallego.HTML"
+                           FontSize="13"
+                           TextColor="#BBBBBB"
+                           LineBreakMode="CharacterWrap" />
+                    <Button Text="Ver noticia"
+                            HeightRequest="45"
+                            CornerRadius="10"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            FontFamily="Montserrat-Bold.ttf"
+                            Clicked="OnNoticiaLaVanguardiaClicked" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- RTVE – Hoy empieza todo -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="14"
+                   Padding="18"
+                   HasShadow="False">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="RTVE – Hoy empieza todo: 30 años de techno a la espalda"
+                           FontSize="18"
+                           TextColor="White"
+                           FontFamily="Montserrat-Bold.ttf" />
+                    <Label Text="https://www.rtve.es/play/audios/hoy-empieza-todo-1-2012-2025/hoy-empieza-todo-angel-carmona-nando-dixkontrol-30-anos-techno-espalda-060716/3654562/"
+                           FontSize="13"
+                           TextColor="#BBBBBB"
+                           LineBreakMode="CharacterWrap" />
+                    <Button Text="Escuchar / Ver"
+                            HeightRequest="45"
+                            CornerRadius="10"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            FontFamily="Montserrat-Bold.ttf"
+                            Clicked="OnNoticiaHoyEmpiezaTodoClicked" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- BEATBURGuer -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="14"
+                   Padding="18"
+                   HasShadow="False">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Beatburguer – 30 años de Psicódromo"
+                           FontSize="18"
+                           TextColor="White"
+                           FontFamily="Montserrat-Bold.ttf" />
+                    <Label Text="https://beatburguer.com/30-anos-de-psicodromo-club-de-referencia-en-la-noche-y-el-dia-de-barcelona/"
+                           FontSize="13"
+                           TextColor="#BBBBBB"
+                           LineBreakMode="CharacterWrap" />
+                    <Button Text="Ver artículo"
+                            HeightRequest="45"
+                            CornerRadius="10"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            FontFamily="Montserrat-Bold.ttf"
+                            Clicked="OnNoticiaBeatburguerClicked" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- EL ESPAÑOL -->
+            <Frame BackgroundColor="#10FFFFFF"
+                   CornerRadius="14"
+                   Padding="18"
+                   HasShadow="False">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="El Español – Artículo sobre Nando Dixkontrol"
+                           FontSize="18"
+                           TextColor="White"
+                           FontFamily="Montserrat-Bold.ttf" />
+                    <Label Text="https://www.elespanol.com/cultura/musica/20160922/157485069_0.html"
+                           FontSize="13"
+                           TextColor="#BBBBBB"
+                           LineBreakMode="CharacterWrap" />
+                    <Button Text="Ver noticia"
+                            HeightRequest="45"
+                            CornerRadius="10"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            FontFamily="Montserrat-Bold.ttf"
+                            Clicked="OnNoticiaElEspanolClicked" />
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</local:BasePage>

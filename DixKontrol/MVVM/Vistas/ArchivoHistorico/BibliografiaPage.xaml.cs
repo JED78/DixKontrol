@@ -1,6 +1,6 @@
 namespace DixKontrol.MVVM.Vistas.ArchivoHistorico;
 
-public partial class BibliografiaPage : ContentPage
+public partial class BibliografiaPage : BasePage
 {
 	public BibliografiaPage()
 	{

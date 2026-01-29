@@ -1,6 +1,6 @@
 namespace DixKontrol;
 
-public partial class DermiurgoPage : ContentPage
+public partial class DermiurgoPage : BasePage
 {
 	public DermiurgoPage()
 	{

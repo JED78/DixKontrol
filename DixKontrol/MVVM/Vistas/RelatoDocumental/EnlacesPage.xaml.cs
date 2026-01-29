@@ -1,6 +1,6 @@
 namespace DixKontrol.MVVM.Vistas.RelatoDocumental;
 
-public partial class EnlacesPage : ContentPage
+public partial class EnlacesPage : BasePage
 {
 	public EnlacesPage()
 	{

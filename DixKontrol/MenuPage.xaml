@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DixKontrol.MenuPage"
-             BackgroundColor="Transparent">
-
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="#050509" Offset="0.0" />
-            <GradientStop Color="#151525" Offset="0.4" />
-            <GradientStop Color="#000000" Offset="1.0" />
-        </LinearGradientBrush>
-    </ContentPage.Background>
+<local:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                x:Class="DixKontrol.MenuPage"
+                xmlns:local="clr-namespace:DixKontrol">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="30">
 
+            <!-- IMAGEN REDONDA SUPERIOR -->
+            <Frame WidthRequest="220"
+       HeightRequest="220"
+       CornerRadius="110"
+       Padding="0"
+       BackgroundColor="#00FFFFFF"
+       BorderColor="White"
+       BorderWidth="6"
+       HasShadow="False"
+       HorizontalOptions="Center"
+       Margin="0,20,0,20">
+
+                <Image Source="nandoportada.png"
+           Aspect="AspectFill"
+           WidthRequest="220"
+           HeightRequest="220"
+           Clip="EllipseGeometry Center=110,110 RadiusX=110 RadiusY=110"/>
+            </Frame>
+
+
+
             <!-- BLOQUE 1 -->
             <VerticalStackLayout x:Name="Bloque1" Spacing="10" Opacity="0">
+
                 <Label Text="Archivo histórico"
                        FontSize="24"
                        FontAttributes="Bold"
@@ -77,22 +91,36 @@
                                 Clicked="Makina_Clicked"/>
 
                         <Button Text="Bibliografía"
-                                 FontSize="16"
-                                 FontAttributes="Bold"
-                                 TextColor="White"
-                                 BackgroundColor="Transparent"
-                                 BorderColor="#60FFFFFF"
-                                 BorderWidth="1"
-                                 CornerRadius="12"
-                                 Padding="10,6"
-                                 HeightRequest="36"
-                                 Clicked="Bibliografialaboral_Clicked"/>
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="Bibliografialaboral_Clicked"/>
+
+                        <Button Text="Archivo de Prensa"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="ArchivodePrensa_Clicked"/>
+
                     </VerticalStackLayout>
                 </Frame>
             </VerticalStackLayout>
 
             <!-- BLOQUE 2 -->
             <VerticalStackLayout x:Name="Bloque2" Spacing="10" Opacity="0">
+
                 <Label Text="Presencia Digital y Sesiones"
                        FontSize="24"
                        FontAttributes="Bold"
@@ -103,8 +131,6 @@
                        Padding="15">
 
                     <VerticalStackLayout Spacing="8">
-
-                       
 
                         <Button Text="Sesiones Psicodromo"
                                 FontSize="16"
@@ -117,6 +143,18 @@
                                 Padding="10,6"
                                 HeightRequest="36"
                                 Clicked="Transmedia_Clicked"/>
+
+                        <Button Text="Sesiones ClubBrione"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="#60FFFFFF"
+                                BorderWidth="1"
+                                CornerRadius="12"
+                                Padding="10,6"
+                                HeightRequest="36"
+                                Clicked="SesionesClubBrione_Clicked"/>
 
                         <Button Text="Redes Sociales"
                                 FontSize="16"
@@ -137,4 +175,4 @@
         </VerticalStackLayout>
     </ScrollView>
 
-</ContentPage>
+</local:BasePage>

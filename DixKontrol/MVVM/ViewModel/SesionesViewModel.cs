@@ -8,6 +8,9 @@ namespace DixKontrol.MVVM.ViewModel
     public class SesionesViewModel
     {
         public ObservableCollection<SesionItem> Sesiones { get; set; }
+
+        public event Action<string> PlayRequested;
+
         public Command<string> PlayCommand { get; }
 
         public SesionesViewModel()
@@ -19,16 +22,16 @@ namespace DixKontrol.MVVM.ViewModel
                 Sesiones.Add(new SesionItem
                 {
                     Nombre = $"Sesión {i:00}",
-                    Archivo = $"sesionespsicodromo/sesion{i}.mp3"
+                    Archivo = $"sesion{i}.mp3"
                 });
             }
 
-            PlayCommand = new Command<string>(PlaySesion);
+            PlayCommand = new Command<string>(OnPlay);
         }
 
-        private async void PlaySesion(string archivo)
+        private void OnPlay(string archivo)
         {
-            await Launcher.OpenAsync(archivo);
+            PlayRequested?.Invoke(archivo);
         }
     }
 

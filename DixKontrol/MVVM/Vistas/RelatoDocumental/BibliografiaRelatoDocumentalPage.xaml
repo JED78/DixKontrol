@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<local:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DixKontrol.MVVM.Vistas.RelatoDocumental.BibliografiaRelatoDocumentalPage"
+              xmlns:local="clr-namespace:DixKontrol"
+            >
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <!-- Título principal -->
+            <Label Text="Bibliografía laboral de Nando Dixkontrol"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="#FFD966"
+                   FontFamily="Montserrat-Bold.ttf"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10,0,10"/>
+
+            <!-- Resumen -->
+            <Label Text="Nando Dixkontrol (Barcelona, 1964) es uno de los DJs y productores más influyentes de la música electrónica española, especialmente dentro del movimiento mákina y la escena rave de finales de los 80 y los 90. Fue pionero en transformar el papel del DJ en cabina, dándole protagonismo escénico y conectándolo directamente con el público."
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"
+                   LineBreakMode="WordWrap"/>
+
+            <!-- DJ y figura clave -->
+            <Label Text="🎧 DJ y figura clave de la música mákina"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#FFCC00"
+                   FontFamily="Montserrat-Bold.ttf"
+                   Margin="0,10,0,4"/>
+
+            <Label Text="• Considerado uno de los impulsores de la música mákina en España y un referente de la escena electrónica barcelonesa y de la Ruta del Bakalao."
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="• En 1989 inauguró el mítico club Psicodromo, uno de los locales más influyentes de la época y punto de partida de una nueva escena musical en Barcelona."
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"
+                   LineBreakMode="WordWrap"
+                   Margin="0,2,0,0"/>
+
+            <!-- Productor musical -->
+            <Label Text="🎼 Productor musical"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#FFCC00"
+                   FontFamily="Montserrat-Bold.ttf"
+                   Margin="0,14,0,4"/>
+
+            <Label Text="Registró múltiples trabajos musicales en los 90, entre ellos:"
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="• Welcome to Cybertron (1996)"
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"/>
+
+            <Label Text="• Music for the Children (1997)"
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"/>
+
+            <Label Text="• Big Ben (1998)"
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"/>
+
+            <Label Text="Estos trabajos aparecen catalogados en la Biblioteca Nacional de España y en Discogs como parte de su obra discográfica."
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"
+                   LineBreakMode="WordWrap"
+                   Margin="0,4,0,0"/>
+
+            <!-- Figura cultural -->
+            <Label Text="🎬 Figura cultural y documental"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#FFCC00"
+                   FontFamily="Montserrat-Bold.ttf"
+                   Margin="0,14,0,4"/>
+
+            <Label Text="Su vida y trayectoria han sido objeto del documental “Ciudadano Fernando Gallego: Baila o muere”, donde se analiza su impacto en la cultura electrónica española y su papel como icono de una generación de clubbers y ravers."
+                   FontSize="14"
+                   TextColor="#DDDDDD"
+                   FontFamily="Montserrat-Regular.ttf"
+                   LineBreakMode="WordWrap"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</local:BasePage>

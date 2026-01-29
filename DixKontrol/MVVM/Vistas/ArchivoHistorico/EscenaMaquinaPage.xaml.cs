@@ -1,6 +1,6 @@
 namespace DixKontrol.MVVM.Vistas.ArchivoHistorico;
 
-public partial class EscenaMaquinaPage : ContentPage
+public partial class EscenaMaquinaPage : BasePage
 {
 	public EscenaMaquinaPage()
 	{

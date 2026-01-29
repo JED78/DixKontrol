@@ -3,7 +3,7 @@ using DixKontrol.MVVM.Vistas.RelatoDocumental;
 
 namespace DixKontrol;
 
-public partial class MenuPage : ContentPage
+public partial class MenuPage : BasePage
 {
 	public MenuPage()
 	{
@@ -29,10 +29,15 @@ public partial class MenuPage : ContentPage
     {
         Navigation.PushAsync(new EscenaMaquinaPage());
     }
+    
 
+    private void ArchivodePrensa_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new MVVM.Vistas.ArchivoHistorico.ArchivodePrensaPage());
+    }
     private void Bibliografialaboral_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new BibliografiaPage());
+        Navigation.PushAsync(new BibliografiaRelatoDocumentalPage());
     }
     private void Transmedia_Clicked(object sender, EventArgs e)
     {
@@ -43,19 +48,35 @@ public partial class MenuPage : ContentPage
         Navigation.PushAsync(new EnlacesPage());
     }
 
+    private void SesionesClubBrione_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new SesionesClubBrionePage());
+    }
+    
+
     // Animación. 
     protected override async void OnAppearing()
     {
         base.OnAppearing();
 
         // Animación secuencial
-        await FadeIn(Bloque1);
-        await FadeIn(Bloque2);
+        await AnimateIn(Bloque1, 250);
+        await AnimateIn(Bloque2, 180);
+
     }
 
-    private async Task FadeIn(View view)
+    private async Task AnimateIn(View view, int delay = 0)
     {
         view.Opacity = 0;
-        await view.FadeTo(1, 800, Easing.CubicInOut);
+        view.Scale = 0.85;
+        view.TranslationY = 30;
+
+        await Task.Delay(delay);
+
+        await Task.WhenAll(
+            view.FadeTo(1, 600, Easing.CubicOut),
+            view.TranslateTo(0, 0, 600, Easing.CubicOut),
+            view.ScaleTo(1, 600, Easing.CubicOut)
+        );
     }
 }

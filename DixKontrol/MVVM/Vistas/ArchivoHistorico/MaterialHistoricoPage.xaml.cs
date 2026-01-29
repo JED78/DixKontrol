@@ -4,7 +4,7 @@ using Plugin.Maui.Audio;
 
 namespace DixKontrol.MVVM.Vistas.ArchivoHistorico;
 
-public partial class MaterialHistoricoPage : ContentPage
+public partial class MaterialHistoricoPage : BasePage
 {
 	public MaterialHistoricoPage()
 	{
@@ -14,10 +14,12 @@ public partial class MaterialHistoricoPage : ContentPage
     private async void ReproducirAudio1_Clicked(object sender, EventArgs e)
     {
         // Cargar el archivo de audio desde Resources/Raw
-        var stream = await FileSystem.OpenAppPackageFileAsync("Psicodromo.mp3");
+        var stream = await FileSystem.OpenAppPackageFileAsync("psicodromo.mp3");
 
         // Crear el reproductor
         var player = AudioManager.Current.CreatePlayer(stream);
+
+        player.Stop();
 
         // Reproducir la canción
         player.Play();
@@ -63,18 +65,12 @@ public partial class MaterialHistoricoPage : ContentPage
         "Foto_013.jpg",
         "Foto_014.jpg",
         "Foto_015.jpg",
-        "Foto_016.jpg",
-        "Foto_017.jpg",
-        "Foto_018.jpg",
-        "Foto_019.jpg",
-        "Foto_020.jpg",
-        "Foto_021.jpg",
-        "Foto_022.jpg",
-        "Foto_023.jpg",
-        "Foto_024.jpg"
+        "Foto_016.jpg"
+       
     };
 
-        var popup = new FlyerGalleryPopup(images, startIndex: 2); // empieza en flyer3
+        var popup = new FlyerGalleryPopup(images, startIndex: 1); 
+
         await this.ShowPopupAsync(popup);
 
 

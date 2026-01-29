@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<local:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                x:Class="DixKontrol.MVVM.Vistas.RelatoDocumental.SesionesClubBrionePage"
+                xmlns:local="clr-namespace:DixKontrol"
+                BackgroundColor="Transparent">
+
+    <!-- FONDO DEGRADADO -->
+    <local:BasePage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#050509" Offset="0.0" />
+            <GradientStop Color="#0D0D18" Offset="0.35" />
+            <GradientStop Color="#000000" Offset="1.0" />
+        </LinearGradientBrush>
+    </local:BasePage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="28">
+
+            <!-- TÍTULO -->
+            <Label Text="Sesiones Club Brione"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor="#FFD966"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="Montserrat-Bold.ttf"
+                   Margin="0,10,0,10"/>
+
+            <!-- TARJETA 1 -->
+            <Frame BackgroundColor="#12FFFFFF"
+                   BorderColor="#30FFD966"
+                   CornerRadius="20"
+                   Padding="20"
+                   HasShadow="False"
+                   Margin="0,0,0,26">
+
+                <VerticalStackLayout Spacing="14">
+
+                    <Label Text="CLUB BRIONE 18 07 2023"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="#FFD966"
+                           FontFamily="Montserrat-Bold.ttf"
+                           LineBreakMode="WordWrap"/>
+
+                    <Button Text="▶ Reproducir"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            CornerRadius="22"
+                            FontFamily="Montserrat-Bold.ttf"
+                            HorizontalOptions="Center"
+                            WidthRequest="150"
+                            HeightRequest="38"
+                            Padding="10,4"
+                            FontSize="15"
+                            Clicked="OnSesion1Clicked"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- TARJETA 2 -->
+            <Frame BackgroundColor="#12FFFFFF"
+                   BorderColor="#30FFD966"
+                   CornerRadius="20"
+                   Padding="20"
+                   HasShadow="False"
+                   Margin="0,0,0,26">
+
+                <VerticalStackLayout Spacing="14">
+
+                    <Label Text="21 minutos de Nando Dixkontrol al CP Brians 1"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="#FFD966"
+                           FontFamily="Montserrat-Bold.ttf"
+                           LineBreakMode="WordWrap"/>
+
+                    <Button Text="▶ Reproducir"
+                            BackgroundColor="#FFD966"
+                            TextColor="Black"
+                            CornerRadius="22"
+                            FontFamily="Montserrat-Bold.ttf"
+                            HorizontalOptions="Center"
+                            WidthRequest="150"
+                            HeightRequest="38"
+                            Padding="10,4"
+                            FontSize="15"
+                            Clicked="OnSesion2Clicked"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</local:BasePage>

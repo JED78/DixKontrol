@@ -2,9 +2,15 @@
 {
     public partial class AppShell : Shell
     {
-        public AppShell()
+            public AppShell()
+            {
+                InitializeComponent();
+
+        this.Items.Add(new ShellContent
         {
-            InitializeComponent();
+            ContentTemplate = new DataTemplate(typeof(DermiurgoPage)),
+            Route = "MainPage"
+        });
+            }
         }
     }
-}

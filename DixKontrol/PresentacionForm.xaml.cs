@@ -1,8 +1,9 @@
 namespace DixKontrol;
 
-public partial class PresentacionForm : ContentPage
+public partial class PresentacionForm : BasePage
+
 {
-	public PresentacionForm()
+    public PresentacionForm()
 	{
 		InitializeComponent();
         

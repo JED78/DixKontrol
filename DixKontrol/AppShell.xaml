@@ -6,8 +6,4 @@
     xmlns:local="clr-namespace:DixKontrol"
     Title="DixKontrol">
 
-    <ShellContent
-        ContentTemplate="{DataTemplate local:DermiurgoPage}"
-        Route="MainPage" />
-
 </Shell>
