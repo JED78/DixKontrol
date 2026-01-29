@@ -11,7 +11,7 @@
 
 <h2 style="font-size: 28px; font-weight: bold;">🌀 ¿Qué es esta aplicación?</h2>
 <p>
-La aplicación oficial de <strong>Nando Dixkontrol</strong> es un recorrido interactivo por la historia, la música y el legado de uno de los DJs más influyentes de la escena mákina y de la Barcelona preolímpica.
+La aplicación de <strong>Nando Dixkontrol</strong> es un recorrido interactivo por la historia, la música y el legado de uno de los DJs más influyentes de la escena mákina y de la Barcelona preolímpica.
 Está diseñada para que cualquier persona —fans, curiosos o amantes de la cultura electrónica— pueda explorar su obra de forma cómoda, visual y ordenada.
 No necesitas conocimientos técnicos: todo está pensado para que navegues con facilidad.
 </p>
