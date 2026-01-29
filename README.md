@@ -5,7 +5,7 @@
 
 <h2 style="font-size: 28px; font-weight: bold;">📸 Vista previa de la aplicación</h2>
 <p>Añade aquí una captura de pantalla del menú principal o de cualquier sección.</p>
-<p><code>![Captura de la aplicación](ruta/a/tu/imagen.png)</code></p>
+<p><code>![Captura de la aplicación](presentacionDixcontrol.png)</code></p>
 
 <hr>
 
