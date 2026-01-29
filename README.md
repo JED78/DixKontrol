@@ -4,8 +4,8 @@
 <hr>
 
 <h2 style="font-size: 28px; font-weight: bold;">📸 Vista previa de la aplicación</h2>
-<p><img src="presentacionDixcontrol.png" alt="Captura de la aplicación" width="400"></p>
-<p><img src="presentacionDixcontrol1.png" alt="Captura de la aplicación" width="400"></p>
+<p><img src="presentacionDixcontrol.png" alt="Captura de la aplicación" width="400"><img src="presentacionDixcontrol1.png" alt="Captura de la aplicación" width="400"></p>
+
 
 <hr>
 
