@@ -1,4 +1,4 @@
-<h1 style="font-size: 34px; font-weight: bold;">🎧 Aplicación Oficial de Nando Dixkontrol</h1>
+<h1 style="font-size: 34px; font-weight: bold;">🎧 Aplicación de Nando Dixkontrol</h1>
 <p>Archivo histórico, sesiones, prensa y legado de una leyenda de la electrónica catalana.</p>
 
 <hr>
