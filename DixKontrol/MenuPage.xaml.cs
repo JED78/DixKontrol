@@ -1,3 +1,4 @@
+
 using DixKontrol.MVVM.Vistas.ArchivoHistorico;
 using DixKontrol.MVVM.Vistas.RelatoDocumental;
 
@@ -7,8 +8,21 @@ public partial class MenuPage : BasePage
 {
 	public MenuPage()
 	{
-		InitializeComponent();
-	}
+        try
+        {
+            InitializeComponent();
+        }
+        catch (Exception ex)
+        {
+            File.AppendAllText(
+                Path.Combine(FileSystem.AppDataDirectory, "error.log"),
+                $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} | {ex}\n");
+            DisplayAlert(
+                         "Error",
+                         "Se ha producido un error inesperado.\nSe ha generado un log." + ex.Message,
+                         "OK");
+        }
+    }
 
     private void Bio_Clicked(object sender, EventArgs e)
     {
@@ -74,9 +88,9 @@ public partial class MenuPage : BasePage
         await Task.Delay(delay);
 
         await Task.WhenAll(
-            view.FadeTo(1, 600, Easing.CubicOut),
-            view.TranslateTo(0, 0, 600, Easing.CubicOut),
-            view.ScaleTo(1, 600, Easing.CubicOut)
+            view.FadeToAsync(1, 600, Easing.CubicOut),
+            view.TranslateToAsync(0, 0, 600, Easing.CubicOut),
+            view.ScaleToAsync(1, 600, Easing.CubicOut)
         );
     }
 }

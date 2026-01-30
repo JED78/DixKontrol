@@ -20,8 +20,8 @@ public partial class PresentacionForm : BasePage
             AvatarContainer.Opacity = 0;
 
             await Task.WhenAll(
-                AvatarContainer.ScaleTo(1, 3000, Easing.CubicOut),
-                AvatarContainer.FadeTo(1, 3000, Easing.CubicOut)
+                AvatarContainer.ScaleToAsync(1, 3000, Easing.CubicOut),
+                AvatarContainer.FadeToAsync(1, 3000, Easing.CubicOut)
             );
         });
 
@@ -33,8 +33,8 @@ public partial class PresentacionForm : BasePage
         NombreLabel.TranslationY = 40;
 
         await Task.WhenAll(
-            NombreLabel.FadeTo(1, 1500, Easing.CubicOut),
-            NombreLabel.TranslateTo(0, 0, 1500, Easing.CubicOut)
+            NombreLabel.FadeToAsync(1, 1500, Easing.CubicOut),
+            NombreLabel.TranslateToAsync(0, 0, 1500, Easing.CubicOut)
         );
 
         // Animación de la descripción
@@ -42,13 +42,22 @@ public partial class PresentacionForm : BasePage
         DescripcionLabel.TranslationY = 20;
 
         await Task.WhenAll(
-            DescripcionLabel.FadeTo(1, 2000, Easing.CubicOut),
-            DescripcionLabel.TranslateTo(0, 0, 2000, Easing.CubicOut)
+            DescripcionLabel.FadeToAsync(1, 2000, Easing.CubicOut),
+            DescripcionLabel.TranslateToAsync(0, 0, 2000, Easing.CubicOut)
         );
     }
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new MenuPage());
+        try
+        {
+            Navigation.PushAsync(new MenuPage());
+        }
+        catch (Exception ex)
+        {
+            File.AppendAllText(
+                Path.Combine(FileSystem.AppDataDirectory, "nav_error.log"),
+                $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} | {ex}\n");
+        }
     }
 }
