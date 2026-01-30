@@ -76,3 +76,16 @@ La aplicación está creada con una estética oscura, elegante y moderna, inspir
 Este proyecto busca preservar y difundir el legado de <strong>Nando Dixkontrol</strong> con respeto, cariño y fidelidad histórica.
 Si tienes sugerencias o deseas colaborar, puedes ponerte en contacto con el equipo desarrollador.
 </p>
+<section>
+  
+  <h2>📥 Descargar DixKontrol</h2>
+  <p>
+    Descubre la vida y trayectoria de <strong>Nando DixKontrol</strong> con esta aplicación interactiva. 
+    Explora su biografía y momentos clave, diseñada para ofrecer una experiencia entretenida sobre su historia.
+  </p>
+  <p>
+    <a href="https://github.com/JED78/DixKontrol/releases/download/Maquina/DixKontrol_1.1.0.0_x86.msix" target="_blank" rel="noopener noreferrer">
+      Descargar DixKontrol 1.1.0.0 (x86)
+    </a>
+  </p>
+</section>
